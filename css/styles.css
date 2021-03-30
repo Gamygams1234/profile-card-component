@@ -1,0 +1,73 @@
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+body .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 50%;
+}
+body .content .media-card {
+  border-radius: 1em;
+  overflow: hidden;
+  width: 375px;
+}
+body .content .media-card .top-image {
+  background-image: url("../images/bg-pattern-card.svg");
+  height: 150px;
+}
+body .content .media-card .profile {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2d3248;
+}
+body .content .media-card .profile .profile-image {
+  border-radius: 50px;
+  position: relative;
+  top: -48px;
+  border: 4px solid white;
+}
+body .content .media-card .profile .name {
+  font-size: 1.2em;
+}
+body .content .media-card .information {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+  border-top: 1px lightgray solid;
+  display: flex;
+  justify-content: space-around;
+}
+body .content .media-card .information .info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #2d3248;
+}
+body .content .media-card .information .info-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+body .content .media-card .information .info-section p {
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px) {
+  body .content {
+    background-size: 500px 500px;
+  }
+}
